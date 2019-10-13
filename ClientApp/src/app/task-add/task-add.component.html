@@ -1,0 +1,29 @@
+
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+  <h1 class="h2">Task Add </h1>
+</div>
+<p>Aplicación para agregar Task</p>
+
+<div class="form-group">
+<label>Titulo:
+  <input [(ngModel)]="task.title" class="form-control" placeholder="Título aquí &lt;3..." type="text"/>
+</label>
+</div>
+
+<div class="form-group">
+<label>Descripción:
+  <textarea [(ngModel)]="task.description" class="form-control" placeholder="Descripción en este lugar :3..." type="text"  cols="30" rows="10"></textarea>
+</label>
+</div>
+
+<div class="form-group">
+  <label>Prioritario:
+      <input type="checkbox" class="form-control" [(ngModel)]="task.priority">
+  </label>
+</div>
+<div class="form-group">
+<button (click)="add()" class="btn btn-primary">Agregar</button>
+</div>
+
+<div>
+</div>
